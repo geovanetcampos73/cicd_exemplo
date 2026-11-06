@@ -13,7 +13,8 @@ function dividir(a, b) {
     return a / b;
 }
 function calcular(operacao) {    
-         const num1 = parseFloat(document.getElementById("num1").value);                 		const num2 = parseFloat(document.getElementById("num2").value);    
+         const num1 = parseFloat(document.getElementById("num1").value);                 		
+         const num2 = parseFloat(document.getElementById("num2").value);    
          let resultado;        
          try {        
              switch (operacao) {            
@@ -30,7 +31,8 @@ function calcular(operacao) {
                   resultado = dividir(num1, num2);                
                   break;            
             default:                
-                 resultado = "Operação inválida";        }                   	document.getElementById("resultado").innerText = `Resultado: ${resultado}`;    } 
+                 resultado = "Operação inválida";        }                   	
+                 document.getElementById("resultado").innerText = `Resultado: ${resultado}`;    } 
          catch (error) {        
            document.getElementById("resultado").innerText = `Erro: ${error.message}`;       	
          }
